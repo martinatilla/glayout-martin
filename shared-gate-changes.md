@@ -1,5 +1,10 @@
 # Current mirror: shared gate rail + provenance tool
 
+> **Superseded (2026-10-06):** `shared_gate` is now one case of net-aware rails in the interdigitized macro, which
+> also merges shared source rails, removes every remaining short (`current_mirror`, `opamp`, `diff_pair_cmirrorbias`,
+> `smart_route`) and compacts the rail pitch. See `floorplanning-framework-changes.md` §7. The provenance tool
+> (§3 below) is unchanged.
+
 Reference notes for the uncommitted changes in the `gLayout` submodule (branch `fixing_cmirror`).
 Paths below are relative to this folder.
 

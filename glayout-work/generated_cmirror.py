@@ -1,13 +1,15 @@
-# This is form setting up gLayout
+# This is for setting up gLayout
 
 from glayout.pdk.gf180_mapped import gf180_mapped_pdk as pdk
-from glayout.blocks.elementary.current_mirror.current_mirror import current_mirror
+from glayout.cells.elementary.finger_sequence import cc_current_mirror
 
-# numcols=3 generates ABABAB, numcols=1 generates AB
-for numcols in (3, 1):
-    cm = current_mirror(pdk, numcols=numcols)   # add more parameters here, e.g. width=3, fingers=2
-    cm.name = f"cmirror_{numcols}"
+# fingers=N puts N fingers on each device; the generator searches for the
+# best common-centroid order (fingers=4 -> AABBBBAA, fingers=2 -> ABBA)
+for fingers in (4, 2):
+    cm = cc_current_mirror(pdk, fingers=fingers)   # also: device="pfet", width=3, ratio=2, sequence="A+ A- B+ B-"
+    cm.name = f"cmirror_cc_{fingers}"
     cm.write_gds(f"{cm.name}.gds")
 
     # optional checks
+    print(cm.name, cm.info["diagram"])
     print(cm.name, pdk.drc_magic(cm, cm.name))
