@@ -1,0 +1,136 @@
+{
+  "seed": 0,
+  "cell": "ota5t_routed",
+  "pdk": "gf180",
+  "testbench": "ota",
+  "params": {
+    "ibias": 2e-05,
+    "cl": 1e-12,
+    "vcm": null,
+    "vdd": null,
+    "corner": "typical",
+    "fstart": 1.0,
+    "fstop": 10000000000.0,
+    "points_per_decade": 20,
+    "inp": "VINP",
+    "inn": "VINN",
+    "out": "VOUT",
+    "bias": "IBIAS",
+    "supply": "VDD",
+    "ground": "VSS",
+    "name": "ota"
+  },
+  "workdir": "/foss/designs/glayout-martin/glayout-work/out/evaluate_ota5t",
+  "lvs": {
+    "passed": true,
+    "conclusion": "netlists match",
+    "report": "/foss/designs/glayout-martin/glayout-work/out/evaluate_ota5t/lvs/ota5t_routed_lvs.log"
+  },
+  "extraction": {
+    "mode": "CC",
+    "substrate": "VSS",
+    "devices": "/foss/designs/glayout-martin/glayout-work/out/evaluate_ota5t/kpex/ota5t_routed_devices.cir",
+    "parasitic": "/foss/designs/glayout-martin/glayout-work/out/evaluate_ota5t/kpex/ota5t_routed__ota5t_routed/ota5t_routed_k25d_pex_netlist.spice",
+    "seconds": 5.10603775101481
+  },
+  "views": {
+    "schematic": {
+      "metrics": {
+        "dc_gain_db": 25.05059760032939,
+        "f3db_hz": 1878929.8034837334,
+        "ugf_hz": 33574421.68984556,
+        "pm_deg": 90.988526880375,
+        "phase0_deg": 0.0007238197741339615,
+        "vout_dc_v": 1.694759925969659,
+        "vos_sys_v": 0.044759925969659164,
+        "isupply_a": 4.30463263709123e-05
+      },
+      "error": null,
+      "netlist": "/foss/designs/glayout-martin/glayout-work/out/evaluate_ota5t/dut/dut_schematic.spice",
+      "seconds": 0.05419787502614781
+    },
+    "devices": {
+      "metrics": {
+        "dc_gain_db": 25.050701493405793,
+        "f3db_hz": 1880900.6792825733,
+        "ugf_hz": 33612360.62766297,
+        "pm_deg": 91.02614778853574,
+        "phase0_deg": 0.0007238329434461246,
+        "vout_dc_v": 1.694755157737121,
+        "vos_sys_v": 0.04475515773712102,
+        "isupply_a": 4.30462729462222e-05
+      },
+      "error": null,
+      "netlist": "/foss/designs/glayout-martin/glayout-work/out/evaluate_ota5t/dut/dut_devices.spice",
+      "seconds": 0.039428459014743567
+    },
+    "pex": {
+      "metrics": {
+        "dc_gain_db": 25.050701493406283,
+        "f3db_hz": 1865618.3932273742,
+        "ugf_hz": 33324177.858621556,
+        "pm_deg": 90.62698203073755,
+        "phase0_deg": 0.0007235699146661507,
+        "vout_dc_v": 1.69475515773712,
+        "vos_sys_v": 0.04475515773712013,
+        "isupply_a": 4.304627294622206e-05
+      },
+      "error": null,
+      "netlist": "/foss/designs/glayout-martin/glayout-work/out/evaluate_ota5t/dut/dut_pex.spice",
+      "seconds": 0.04445025004679337
+    }
+  },
+  "gaps": {
+    "dc_gain_db": {
+      "schematic_to_devices": 0.00010389307640323864,
+      "devices_to_pex": 4.902744876744691e-13,
+      "schematic_to_pex": 0.00010389307689351313
+    },
+    "f3db_hz": {
+      "schematic_to_devices": 0.001048935300928024,
+      "devices_to_pex": -0.00812498300602889,
+      "schematic_to_pex": -0.00708457028659533
+    },
+    "ugf_hz": {
+      "schematic_to_devices": 0.0011299952734222106,
+      "devices_to_pex": -0.008573714064112501,
+      "schematic_to_pex": -0.0074534070470584106
+    },
+    "pm_deg": {
+      "schematic_to_devices": 0.037620908160732824,
+      "devices_to_pex": -0.39916575779818686,
+      "schematic_to_pex": -0.36154484963745404
+    },
+    "phase0_deg": {
+      "schematic_to_devices": 1.316931216312732e-08,
+      "devices_to_pex": -2.6302877997386783e-07,
+      "schematic_to_pex": -2.498594678107405e-07
+    },
+    "vout_dc_v": {
+      "schematic_to_devices": -4.768232538143735e-06,
+      "devices_to_pex": -8.881784197001252e-16,
+      "schematic_to_pex": -4.7682325390319136e-06
+    },
+    "vos_sys_v": {
+      "schematic_to_devices": -4.768232538143735e-06,
+      "devices_to_pex": -8.881784197001252e-16,
+      "schematic_to_pex": -4.7682325390319136e-06
+    },
+    "isupply_a": {
+      "schematic_to_devices": -1.2410975477930068e-06,
+      "devices_to_pex": -3.148362501208875e-15,
+      "schematic_to_pex": -1.2410975509413654e-06
+    }
+  },
+  "cap_by_net_f": {
+    "VSS": 5.4966535000000004e-14,
+    "VDD": 1.2479562365e-14,
+    "_10": 9.030911065e-15,
+    "_11": 8.884284000000001e-15,
+    "VOUT": 7.486299399999999e-15,
+    "IBIAS": 5.18437929e-15,
+    "VINN": 1.73997419e-15,
+    "VINP": 1.5592622e-15
+  },
+  "cap_total_f": 5.066560375499999e-14
+}

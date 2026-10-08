@@ -161,8 +161,9 @@ byte-identical before and after for `two_nfet_interdigitized`, `two_pfet_interdi
 `generic_4T_interdigitzed`, `diff_pair_ibias` and `opamp`. Both backends (gdsfactory and gdstk)
 build the new mirror.
 
-**Your files:** `glayout-work/cmirror_3.gds` and `cmirror_1.gds` (new) vs `cmirror_*_old.gds`
-(before). The new files were built with `glayout-martin/.venv` and match the verified layouts.
+**Your files:** `glayout-work/reference/cmirror_1.gds` (new) vs `cmirror_1_old.gds` (before); the
+`cmirror_3` pair is only in git history (`9ec41c0`). The new files were built with
+`glayout-martin/.venv` and match the verified layouts.
 
 ---
 

@@ -1,4 +1,6 @@
 """simple_cmirror.py - a 1:1 NMOS current mirror built by hand with gLayout (sky130)."""
+from pathlib import Path
+
 from glayout import (sky130, nmos, tapring, c_route, L_route, straight_route, align_comp_to_port,
                      evaluate_bbox, movey, rename_ports_by_orientation, Netlist)
 from glayout.backend import Component, rectangle
@@ -67,7 +69,10 @@ def simple_cmirror(pdk=sky130, width: float = 3.0, length: float = 0.5, fingers:
 
 
 if __name__ == "__main__":
+    OUT = Path(__file__).resolve().parent / "out" / Path(__file__).stem; OUT.mkdir(parents=True, exist_ok=True)
+    from glayout.evaluation import write_lvs_netlist
     cm = simple_cmirror(sky130)
-    cm.write_gds("simple_cmirror.gds")
+    cm.write_gds(OUT / "simple_cmirror.gds")
+    write_lvs_netlist(cm, sky130, OUT / "simple_cmirror.spice")   # sky130: reference with the top renamed
     print(cm.info["netlist"].generate_netlist())
     print("size (um):", evaluate_bbox(cm))
