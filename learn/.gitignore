@@ -1,0 +1,5 @@
+# third-party data, fetched by data/fetch_analoggenie.sh
+external/
+# regenerated from external/ by data/ingest.py (frozen outputs such as splits.json are kept)
+data/build/
+__pycache__/

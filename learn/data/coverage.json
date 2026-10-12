@@ -1,0 +1,171 @@
+{
+ "analoggenie_sha": "efc25358939c6bedd247f28d3df61066964f3a90",
+ "by_category": {
+  "book:allen_holberg": {
+   "devices": 1457,
+   "items": 103,
+   "layout_v1": 30,
+   "mos_only": 37
+  },
+  "book:camenzind": {
+   "devices": 694,
+   "items": 58,
+   "layout_v1": 5,
+   "mos_only": 7
+  },
+  "book:gray": {
+   "devices": 1227,
+   "items": 109,
+   "layout_v1": 16,
+   "mos_only": 16
+  },
+  "book:johns_martin": {
+   "devices": 2160,
+   "items": 148,
+   "layout_v1": 31,
+   "mos_only": 32
+  },
+  "book:razavi_analog_cmos": {
+   "devices": 2112,
+   "items": 313,
+   "layout_v1": 61,
+   "mos_only": 62
+  },
+  "book:razavi_rf": {
+   "devices": 1231,
+   "items": 154,
+   "layout_v1": 10,
+   "mos_only": 13
+  },
+  "paper:bandgap": {
+   "devices": 8362,
+   "items": 320,
+   "layout_v1": 0,
+   "mos_only": 0
+  },
+  "paper:bandgap (opamp extract)": {
+   "devices": 6332,
+   "items": 320,
+   "layout_v1": 110,
+   "mos_only": 126
+  },
+  "paper:comparator": {
+   "devices": 787,
+   "items": 36,
+   "layout_v1": 11,
+   "mos_only": 22
+  },
+  "paper:ldo": {
+   "devices": 14145,
+   "items": 450,
+   "layout_v1": 0,
+   "mos_only": 35
+  },
+  "paper:ldo (opamp extract)": {
+   "devices": 8835,
+   "items": 450,
+   "layout_v1": 155,
+   "mos_only": 175
+  },
+  "paper:lna": {
+   "devices": 79,
+   "items": 10,
+   "layout_v1": 0,
+   "mos_only": 0
+  },
+  "paper:mixer": {
+   "devices": 157,
+   "items": 9,
+   "layout_v1": 0,
+   "mos_only": 0
+  },
+  "paper:opamp": {
+   "devices": 6513,
+   "items": 400,
+   "layout_v1": 85,
+   "mos_only": 85
+  },
+  "paper:pa": {
+   "devices": 181,
+   "items": 9,
+   "layout_v1": 1,
+   "mos_only": 1
+  },
+  "paper:power_converter": {
+   "devices": 8872,
+   "items": 270,
+   "layout_v1": 0,
+   "mos_only": 0
+  },
+  "paper:sc_sampler": {
+   "devices": 20490,
+   "items": 871,
+   "layout_v1": 0,
+   "mos_only": 0
+  },
+  "paper:vco": {
+   "devices": 1392,
+   "items": 81,
+   "layout_v1": 4,
+   "mos_only": 6
+  },
+  "unlisted": {
+   "devices": 97,
+   "items": 9,
+   "layout_v1": 5,
+   "mos_only": 5
+  }
+ },
+ "device_kinds": {
+  "cap": 4584,
+  "composite:INVERTER": 2,
+  "diode": 245,
+  "ind": 796,
+  "nfet": 38913,
+  "npn": 951,
+  "pfet": 32170,
+  "pnp": 989,
+  "res": 6473
+ },
+ "errors": [],
+ "flattened": 32,
+ "items": 4120,
+ "layout_v1": {
+  "nfet_body": 10,
+  "non_mos": 3498,
+  "ok": 524,
+  "too_many_blocks": 88
+ },
+ "layout_v1_block_kinds": {
+  "BIAS": 976,
+  "CASC": 678,
+  "CM": 1349,
+  "CMB": 483,
+  "CS": 215,
+  "DP": 488,
+  "INV": 22,
+  "OTHER": 18,
+  "SF": 24,
+  "TG": 10
+ },
+ "layout_v1_blocks": {
+  "1": 6,
+  "10": 66,
+  "11": 77,
+  "12": 66,
+  "2": 29,
+  "3": 34,
+  "4": 26,
+  "5": 27,
+  "6": 19,
+  "7": 30,
+  "8": 61,
+  "9": 83
+ },
+ "renamed": 3075,
+ "seconds": 5.9,
+ "warnings": {
+  "renamed": 3075
+ },
+ "with_problems": 20
+}
