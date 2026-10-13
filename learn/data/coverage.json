@@ -22,7 +22,7 @@
   "book:johns_martin": {
    "devices": 2160,
    "items": 148,
-   "layout_v1": 31,
+   "layout_v1": 29,
    "mos_only": 32
   },
   "book:razavi_analog_cmos": {
@@ -34,7 +34,7 @@
   "book:razavi_rf": {
    "devices": 1231,
    "items": 154,
-   "layout_v1": 10,
+   "layout_v1": 9,
    "mos_only": 13
   },
   "paper:bandgap": {
@@ -52,7 +52,7 @@
   "paper:comparator": {
    "devices": 787,
    "items": 36,
-   "layout_v1": 11,
+   "layout_v1": 10,
    "mos_only": 22
   },
   "paper:ldo": {
@@ -106,7 +106,7 @@
   "paper:vco": {
    "devices": 1392,
    "items": 81,
-   "layout_v1": 4,
+   "layout_v1": 3,
    "mos_only": 6
   },
   "unlisted": {
@@ -131,39 +131,40 @@
  "flattened": 32,
  "items": 4120,
  "layout_v1": {
+  "mos_cap": 6,
   "nfet_body": 10,
   "non_mos": 3498,
-  "ok": 524,
-  "too_many_blocks": 88
+  "ok": 519,
+  "too_many_blocks": 87
  },
  "layout_v1_block_kinds": {
-  "BIAS": 976,
-  "CASC": 678,
-  "CM": 1349,
-  "CMB": 483,
-  "CS": 215,
-  "DP": 488,
+  "BIAS": 974,
+  "CASC": 673,
+  "CM": 1342,
+  "CMB": 480,
+  "CS": 210,
+  "DP": 482,
   "INV": 22,
   "OTHER": 18,
-  "SF": 24,
+  "SF": 22,
   "TG": 10
  },
  "layout_v1_blocks": {
   "1": 6,
-  "10": 66,
+  "10": 65,
   "11": 77,
   "12": 66,
-  "2": 29,
+  "2": 28,
   "3": 34,
   "4": 26,
-  "5": 27,
+  "5": 25,
   "6": 19,
   "7": 30,
-  "8": 61,
+  "8": 60,
   "9": 83
  },
  "renamed": 3075,
- "seconds": 5.9,
+ "seconds": 7.5,
  "warnings": {
   "renamed": 3075
  },

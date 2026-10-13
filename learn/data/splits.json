@@ -13,13 +13,13 @@
   },
   "layout_v1_groups": {
    "test": 15,
-   "train": 241,
-   "val": 26
+   "train": 237,
+   "val": 25
   },
   "layout_v1_items": {
    "test": 26,
-   "train": 462,
-   "val": 51
+   "train": 458,
+   "val": 50
   },
   "unique_topologies": {
    "test": 25,
@@ -27,7 +27,7 @@
    "val": 338
   }
  },
- "created": "2026-10-12",
+ "created": "2026-10-13",
  "items": {
   "C01": {
    "ag_id": 726,
@@ -803,7 +803,7 @@
    "ag_id": 1056,
    "category": "paper:comparator",
    "group": "ag1056",
-   "layout_v1": "ok",
+   "layout_v1": "mos_cap",
    "source": "analoggenie",
    "split": "train",
    "variant": "main",
@@ -863,7 +863,7 @@
    "ag_id": 1061,
    "category": "paper:comparator",
    "group": "ag1061",
-   "layout_v1": "too_many_blocks",
+   "layout_v1": "mos_cap",
    "source": "analoggenie",
    "split": "train",
    "variant": "main",
@@ -2023,7 +2023,7 @@
    "ag_id": 1172,
    "category": "paper:vco",
    "group": "ag1172",
-   "layout_v1": "ok",
+   "layout_v1": "mos_cap",
    "source": "analoggenie",
    "split": "val",
    "variant": "main",
@@ -36623,7 +36623,7 @@
    "ag_id": 530,
    "category": "book:razavi_rf",
    "group": "ag530",
-   "layout_v1": "ok",
+   "layout_v1": "mos_cap",
    "source": "analoggenie",
    "split": "train",
    "variant": "main",
@@ -38173,7 +38173,7 @@
    "ag_id": 683,
    "category": "book:johns_martin",
    "group": "ag683",
-   "layout_v1": "ok",
+   "layout_v1": "mos_cap",
    "source": "analoggenie",
    "split": "train",
    "variant": "main",
@@ -38183,7 +38183,7 @@
    "ag_id": 684,
    "category": "book:johns_martin",
    "group": "ag684",
-   "layout_v1": "ok",
+   "layout_v1": "mos_cap",
    "source": "analoggenie",
    "split": "train",
    "variant": "main",

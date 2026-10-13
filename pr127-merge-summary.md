@@ -1,7 +1,7 @@
 # Combining PR #127 with the floorplanning work: netlist → layout → learning
 
-Status as of 2026-10-13. Phases 0–5 are committed; Phase 6 (labels) is built and verified but not committed;
-Phase 7 (training on external GPUs) has not started.
+Status as of 2026-10-13. Phases 0–6 are committed (gLayout and the outer repo, both on branch
+`learn-dataset`); the full label run and Phase 7 (training on external GPUs) have not started.
 
 ---
 
@@ -140,7 +140,7 @@ test split so the model is graded honestly.
   are the test set; the rest is 90/10 train/validation per category.
   **Train 3,689 / validation 413 / test 37** items (drawable: 458 / 50 / 26). Frozen in `learn/data/splits.json`.
 
-### Phase 6: labels (not committed)
+### Phase 6: labels (gLayout `ea888c2`, outer repo: the commit adding `learn/labels/`)
 
 **What it does:** runs your flow on every drawable circuit and records what happened. These are the answers the
 model learns to predict.
@@ -254,7 +254,6 @@ every nested stage, `GLAYOUT_TABLES=0` none.
 
 | Item | Recommendation |
 |---|---|
-| Commit Phase 6 | gLayout: router A* fix, `lvs_netgen` fix, `mos_cap`, tests. Outer repo: `learn/labels/`, refreshed coverage and splits, `demo_phases.py` |
 | sky130 | Correct the via3/metal-4 rules in gLayout's sky130 table (with DRC/LVS regression on existing cells) before generating sky130 labels |
 | Full gf180 label run | 534 circuits × 3 sizings × 2 seeds ≈ 3,200 records, ~9.5 h on 7 workers (1×1: ~2.5 h; 3×3: ~11.5 h) |
 | Phase 7 | Bundle graphs + labels, train the R-GCN outcome predictor on the external GPUs (CUDA version and scheduler needed), compare with baselines, then use its padding predictions to warm-start the closed loop |
